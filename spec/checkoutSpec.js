@@ -39,4 +39,9 @@ describe("Checkout", function(){
         let result = checkout(product)
         expect(result).toEqual(45)
     })
+    it("should return -1 when a entered", function(){
+        let product = 'a';
+        let result = checkout(product)
+        expect(result).toEqual(-1)
+    })
 })
