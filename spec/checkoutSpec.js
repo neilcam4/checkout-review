@@ -24,4 +24,19 @@ describe("Checkout", function(){
         let result = checkout(product)
         expect(result).toEqual(100)
     })
+    it("should return 40 when CC entered", function(){
+        let product = 'CC';
+        let result = checkout(product)
+        expect(result).toEqual(40)
+    })
+    it("should return 130 when AAA entered", function(){
+        let product = 'AAA';
+        let result = checkout(product)
+        expect(result).toEqual(130)
+    })
+    it("should return 45 when BB entered", function(){
+        let product = 'BB';
+        let result = checkout(product)
+        expect(result).toEqual(45)
+    })
 })
